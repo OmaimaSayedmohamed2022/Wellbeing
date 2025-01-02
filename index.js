@@ -10,6 +10,10 @@ dotenv.config();
 const serverPort = 5005;
 const app = express();
 
+app.get("/", (req, res) => {
+  res.send("Hello, Vercel!");
+});
+
 async function bootStrap() {
   try {
     app.get("/", (req, res) => {
