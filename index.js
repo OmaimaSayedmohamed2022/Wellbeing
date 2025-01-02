@@ -10,7 +10,7 @@ dotenv.config();
 const serverPort = 5005;
 const app = express();
 
-// app.get("/api/greeting", (req, res) => {
+// app.get("/", (req, res) => {
 //   res.send("Hello, Vercel!");
 // });
 
