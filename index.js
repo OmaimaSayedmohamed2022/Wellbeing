@@ -12,7 +12,7 @@ const app = express();
 
 async function bootStrap() {
   try {
-    app.get("/api/greeting", (req, res) => {
+    app.get("/", (req, res) => {
       res.json({ greeting: "Hello from HealthCare Backend" });
     });
     // EXECUTE  appUse here
