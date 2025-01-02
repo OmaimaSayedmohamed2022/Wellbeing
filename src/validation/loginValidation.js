@@ -4,7 +4,6 @@ import { roleEnum } from "../types/enum/allExtentions.js";
 
 export const loginValidation = [
   body("email").isEmail().withMessage("A valid email is required"),
-  body("phone").isMobilePhone().withMessage("Enter a valid phone number"),
   body("password")
     .isLength({ min: 8 })
     .withMessage("Password must be at least 8 characters long"),
