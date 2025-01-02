@@ -10,13 +10,13 @@ dotenv.config();
 const serverPort = 5005;
 const app = express();
 
-app.get("/", (req, res) => {
-  res.send("Hello, Vercel!");
-});
+// app.get("/api/greeting", (req, res) => {
+//   res.send("Hello, Vercel!");
+// });
 
 async function bootStrap() {
   try {
-    app.get("/", (req, res) => {
+    app.get("/api/greeting", (req, res) => {
       res.json({ greeting: "Hello from HealthCare Backend" });
     });
     // EXECUTE  appUse here
