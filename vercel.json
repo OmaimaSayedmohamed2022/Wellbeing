@@ -2,14 +2,8 @@
   "version": 2,
   "builds": [
     {
-      "src": "index.js",  // Your entry file
+      "src": "src/index.js",
       "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/greeting",
-      "dest": "/index.js"
     }
   ]
 }
